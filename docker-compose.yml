@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  jenkinswebhook:
+    image: ${DOCKER_REGISTRY-}jenkinswebhook
+    build:
+      context: .
+      dockerfile: JenkinsWebHook/Dockerfile
