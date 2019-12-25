@@ -6,3 +6,5 @@ services:
     build:
       context: .
       dockerfile: JenkinsWebHook/Dockerfile
+    ports:
+        - "9003:80"
